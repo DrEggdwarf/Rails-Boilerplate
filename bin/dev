@@ -8,4 +8,8 @@ if ! command -v foreman &> /dev/null; then
   gem install foreman --no-document
 fi
 
+# Free ports if already in use
+fuser -k 3000/tcp 2>/dev/null || true
+fuser -k 3036/tcp 2>/dev/null || true
+
 exec foreman start -f Procfile.dev "$@"
