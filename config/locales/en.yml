@@ -1,0 +1,28 @@
+en:
+  app:
+    name: "Rails Boilerplate"
+    tagline: "Ready to clone and customize"
+  home:
+    stack_title: "Tech Stack"
+    agents_build_title: "Build Agents"
+    agents_review_title: "Review Agents"
+    getting_started_title: "Getting Started"
+    getting_started_steps:
+      - "Rename the app: replace `app_name` in config/"
+      - "Open Claude Code and describe your feature"
+      - "The Manager clarifies, plans, executes and documents"
+      - "Edit `app/frontend/pages/Home.jsx` to replace this page"
+    footer: "Rails 8.1 · React 18 · Inertia.js · Vite · 12 AI agents"
+  agents:
+    pm: "Specs & prioritization"
+    architect: "Structure & patterns"
+    backend: "Rails & business logic"
+    frontend: "React & i18n"
+    devops: "Docker & CI/CD"
+    database: "Migrations & SQL perf"
+    security: "OWASP Audit"
+    testing: "Tests & QA"
+    quality: "Quality & maintainability"
+    performance: "Core Web Vitals & N+1"
+    a11y: "Accessibility WCAG 2.1"
+    pentester: "Penetration testing"
