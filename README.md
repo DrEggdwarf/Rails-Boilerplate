@@ -23,21 +23,15 @@ Boilerplate prêt à cloner pour démarrer un projet Rails avec Inertia.js, Reac
 
 ## Quickstart
 
-Depuis le dossier où tu veux créer le projet :
-
 ```bash
 git clone https://github.com/DrEggdwarf/Rails-Boilerplate.git mon-projet
-```
-
-Puis depuis le dossier du projet :
-
-```bash
-bundle config set --local path 'vendor/bundle' && bundle install && npm install && bundle exec rails db:create db:migrate && bin/dev
+cd mon-projet
+bash bin/setup
 ```
 
 > Ouvrir **http://localhost:3000**
 
-> `bin/dev` lance Rails + Vite simultanément via Foreman.
+`bin/setup` installe gems + packages JS, prépare la base de données et lance le serveur automatiquement.
 
 ## Personnaliser le boilerplate
 
