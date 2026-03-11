@@ -31,7 +31,8 @@ bash bin/setup
 
 > Ouvrir **http://localhost:3000**
 
-`bin/setup` installe gems + packages JS, prépare la base de données et lance le serveur automatiquement.
+`bin/setup` installe gems + packages JS, prépare la base de données et lance le serveur.
+Les ports 3000 et 3036 sont libérés automatiquement si déjà utilisés.
 
 ## Personnaliser le boilerplate
 
