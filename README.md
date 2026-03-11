@@ -16,35 +16,39 @@ Boilerplate prêt à cloner pour démarrer un projet Rails avec Inertia.js, Reac
 
 ## Prérequis
 
-- Ruby 3.3+
-- Node.js 20+
+- [rbenv](https://github.com/rbenv/rbenv) + ruby-build (Ruby 3.3+ géré automatiquement via `.ruby-version`)
+- Node.js 20+ (géré automatiquement via `.nvmrc` si nvm est installé)
 - SQLite3 (`sudo apt install sqlite3 libsqlite3-dev` sur Debian/Ubuntu)
 - [Claude Code](https://claude.ai/claude-code) pour le système multi-agents
 
 ## Quickstart
 
 ```bash
-# 1. Cloner et renommer
-git clone <url> mon-projet
+git clone https://github.com/DrEggdwarf/Rails-Boilerplate.git mon-projet && cd mon-projet && bundle config set --local path 'vendor/bundle' && bundle install && npm install && bundle exec rails db:create db:migrate && bin/dev
+```
+
+> Ouvrir **http://localhost:3000**
+
+Ou étape par étape :
+
+```bash
+# 1. Cloner
+git clone https://github.com/DrEggdwarf/Rails-Boilerplate.git mon-projet
 cd mon-projet
 
-# 2. Configurer le bundle path (évite les droits root)
+# 2. Installer les dépendances
 bundle config set --local path 'vendor/bundle'
-
-# 3. Installer les dépendances
 bundle install
 npm install
 
-# 4. Créer la base de données
+# 3. Base de données
 bundle exec rails db:create db:migrate
 
-# 5. Lancer
+# 4. Lancer (Rails + Vite en simultané)
 bin/dev
 ```
 
-Ouvrir `http://localhost:3000`
-
-> **Note** : `bin/dev` lance Rails + Vite simultanément via Foreman (Procfile.dev).
+> `bin/dev` lance Rails + Vite simultanément via Foreman (Procfile.dev).
 
 ## Personnaliser le boilerplate
 
